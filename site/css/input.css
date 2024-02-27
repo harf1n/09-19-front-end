@@ -1,0 +1,36 @@
+
+.input-wrapper {
+  width: 300px;
+  margin: 15px auto;
+  position: relative;
+  color: #fff;
+}
+
+.input-wrapper::after {
+  content: attr(data-text);
+  font-size: 1.5rem;
+  line-height: 0;
+  height: 0;
+  max-width: 100%;
+  font-family: 'Nova Square';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  overflow: hidden;
+  user-select: none;
+  color: transparent;
+}
+
+input {
+  color: #fff;
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  outline: none;
+  font-size: 1.2rem;
+  line-height: 1em;
+  font-family: 'Nova Square';
+  background-color: transparent;
+}
+
